@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+
+    <record id="account_move_account_assistant" model="ir.model.access">
+        <field name="name">account_move_account_assistant</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="account_move_line_account_assistant" model="ir.model.access">
+        <field name="name">account_move_line_account_assistant</field>
+        <field name="model_id" ref="account.model_account_move_line"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="account_tag_account_assistant" model="ir.model.access">
+        <field name="name">account_tag_account_assistant</field>
+        <field name="model_id" ref="account.model_account_account_tag"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+
+    <record id="access_account_payment_account_assistant" model="ir.model.access">
+        <field name="name">access_account_payment_account_assistant</field>
+        <field name="model_id" ref="account.model_account_payment"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="account_account_assistant" model="ir.model.access">
+        <field name="name">account_account_assistant</field>
+        <field name="model_id" ref="account.model_account_account"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">0</field>
+        <field name="perm_create">0</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+    <record id="account_journal_account_assistant" model="ir.model.access">
+        <field name="name">account_journal_account_assistant</field>
+        <field name="model_id" ref="account.model_account_journal"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">0</field>
+        <field name="perm_create">0</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+    <record id="account_type_account_assistant" model="ir.model.access">
+        <field name="name">account_type_account_assistant</field>
+        <field name="model_id" ref="account.model_account_account_type"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">0</field>
+        <field name="perm_create">0</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+    <record id="account_full_reconcile_assistant" model="ir.model.access">
+        <field name="name">account_full_reconcile_assistant</field>
+        <field name="model_id" ref="account.model_account_full_reconcile"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+
+
+
+     <record id="account_partial_reconcile_assistant" model="ir.model.access">
+        <field name="name">account_type_account_assistant</field>
+        <field name="model_id" ref="account.model_account_partial_reconcile"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+
+    <record id="account_cash_rounding_account_assistant" model="ir.model.access">
+        <field name="name">account_cash_rounding_account_assistant</field>
+        <field name="model_id" ref="account.model_account_cash_rounding"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+
+    <record id="account_invoice_send_assistant" model="ir.model.access">
+        <field name="name">account_invoice_send_assistant</field>
+        <field name="model_id" ref="account.model_account_invoice_send"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+    <record id="account_payment_register_assistant" model="ir.model.access">
+        <field name="name">account_payment_register_assistant</field>
+        <field name="model_id" ref="account.model_account_payment_register"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+
+    <record id="account_bank_statement_assistant" model="ir.model.access">
+        <field name="name">account_bank_statement_assistant</field>
+        <field name="model_id" ref="account.model_account_bank_statement"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">0</field>
+        <field name="perm_create">0</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+
+    <record id="account_move_reversal_assistant" model="ir.model.access">
+        <field name="name">account_move_reversal_assistant</field>
+        <field name="model_id" ref="account.model_account_move_reversal"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">0</field>
+    </record>
+
+
+    <record id="account_analytic_line_assistant" model="ir.model.access">
+        <field name="name">account_analytic_line_assistant</field>
+        <field name="model_id" ref="account.model_account_analytic_line"/>
+        <field name="group_id" ref="group_account_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+
+
+
+</odoo>

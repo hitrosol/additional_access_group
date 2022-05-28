@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="access_hr_expense_assistant" model="ir.model.access">
+        <field name="name">hr_expense_assistant</field>
+        <field name="model_id" ref="hr_expense.model_hr_expense"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="hr_expense_sheet_assistant" model="ir.model.access">
+        <field name="name">hr_expense_sheet_assistant</field>
+        <field name="model_id" ref="hr_expense.model_hr_expense_sheet"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="hr_expense_assistant_refuse_wizard" model="ir.model.access">
+        <field name="name">hr_expense_assistant_refuse_wizard</field>
+        <field name="model_id" ref="hr_expense.model_hr_expense_refuse_wizard"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="uom_uom_hr_expense_assistant" model="ir.model.access">
+        <field name="name">uom_uom_hr_expense_assistant</field>
+        <field name="model_id" ref="uom.model_uom_uom"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="account_journal_hr_expense_assistant" model="ir.model.access">
+        <field name="name">account_journal_hr_expense_assistant</field>
+        <field name="model_id" ref="account.model_account_journal"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="account_move_hr_expense_assistant" model="ir.model.access">
+        <field name="name">account_move_hr_expense_assistant</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="account_move_line_hr_expense_assistant" model="ir.model.access">
+        <field name="name">account_move_line_hr_expense_assistant</field>
+        <field name="model_id" ref="account.model_account_move_line"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="account_analytic_line_hr_expense_assistant" model="ir.model.access">
+        <field name="name">account_analytic_line_hr_expense_assistant</field>
+        <field name="model_id" ref="account.model_account_analytic_line"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="access_hr_expense_petty_cash_by_hr_assistant" model="ir.model.access">
+        <field name="name">access_hr_expense_petty_cash_by_hr_assistant</field>
+        <field name="model_id" ref="hr_expense_petty_cash.model_petty_cash"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="res_partner_hr_expense_assistant" model="ir.model.access">
+        <field name="name">res_partner_hr_expense_assistant</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="group_id" ref="group_hr_expense_assistant" />
+        <field name="perm_read">1</field>
+        <field name="perm_write">1</field>
+        <field name="perm_create">1</field>
+        <field name="perm_unlink">1</field>
+    </record>
+
+</odoo>
