@@ -7,7 +7,7 @@
             ('employee_id.user_id', '=', user.id),
             ('create_uid','=',user.id),
             ('petty_cash_id.partner_id','child_of',[user.partner_id.id])]</field>
-        <field name="groups" eval="[(4, ref('additional_access_right.group_hr_expense_assistant'))]"/>
+        <field name="groups" eval="[(4, ref('additional_access_group.group_hr_expense_assistant'))]"/>
     </record>
     <record id="ir_rule_hr_expense_sheet_assistant" model="ir.rule">
         <field name="name">Expense Sheet Assistant</field>
@@ -16,6 +16,6 @@
             ('employee_id.user_id', '=', user.id),
             ('create_uid','=',user.id),
             ('petty_cash_id.partner_id','child_of',[user.partner_id.id])]</field>
-        <field name="groups" eval="[(4, ref('additional_access_right.group_hr_expense_assistant'))]"/>
+        <field name="groups" eval="[(4, ref('additional_access_group.group_hr_expense_assistant'))]"/>
     </record>
 </odoo>
