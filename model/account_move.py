@@ -30,3 +30,7 @@ class AccountPayment(models.Model):
             return super(AccountPayment, self.sudo()).action_post()
         return super(AccountPayment, self).action_post()
 
+
+
+
+
