@@ -19,7 +19,14 @@
                     <xpath expr="//button[@name='action_sheet_move_create']" position="attributes">
                         <attribute eval="[(4,ref('additional_access_group.group_account_assistant'))]" name="groups"/>
                     </xpath>
+
+                    <xpath expr="//button[@name='action_register_payment']" position="attributes">
+                        <attribute eval="[(4,ref('additional_access_group.group_account_assistant'))]" name="groups"/>
+                    </xpath>
+
                 </field>
     </record>
+
+    
 
 </odoo>
